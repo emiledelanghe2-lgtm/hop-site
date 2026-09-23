@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <rect width="1080" height="1080" fill="#0B2E4F"/>
+
+  <!-- eyebrow -->
+  <text x="80" y="140" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" letter-spacing="3" fill="#E8722C">SALES-AS-A-SERVICE</text>
+
+  <!-- headline -->
+  <text x="80" y="280" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#FFFFFF">Built something</text>
+  <text x="80" y="365" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#FFFFFF">great?</text>
+  <text x="80" y="450" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#E8722C">Selling it is a</text>
+  <text x="80" y="535" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#E8722C">different job.</text>
+
+  <!-- supporting line -->
+  <text x="80" y="610" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="500" fill="#C9D2DC">House of Partnerships sells for you,</text>
+  <text x="80" y="650" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="500" fill="#C9D2DC">in the market you're trying to enter.</text>
+
+  <!-- badge -->
+  <rect x="78" y="700" width="430" height="64" rx="32" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.25"/>
+  <text x="103" y="741" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Commission-only. Zero risk.</text>
+
+  <!-- divider -->
+  <rect x="80" y="850" width="80" height="6" rx="3" fill="#E8722C"/>
+
+  <!-- logo lockup bottom -->
+  <g transform="translate(80,920)">
+    <rect x="0" y="0" width="26" height="80" rx="8" fill="#FFFFFF"/>
+    <rect x="54" y="0" width="26" height="80" rx="8" fill="#FFFFFF"/>
+    <path d="M26 40 L54 40 L40 24 M54 40 L40 56" stroke="#E8722C" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="100" y="34" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">HOP</text>
+    <text x="100" y="60" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="1.5" fill="#8FA3B8">HOUSE OF PARTNERSHIPS</text>
+  </g>
+</svg>
