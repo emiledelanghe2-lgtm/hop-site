@@ -45,8 +45,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#0B2E4F;
-    --navy-dark:#082138;
+    --navy:#071B2E;
+    --navy-dark:#040F1B;
     --orange:#E8722C;
     --orange-dark:#CF5F1E;
     --bg:#F7F8FA;
@@ -95,7 +95,7 @@
   /* ---------- Nav ---------- */
   header{
     position:sticky;top:0;z-index:50;
-    background:rgba(11,46,79,0.96);
+    background:rgba(7,27,46,0.97);
     backdrop-filter:blur(6px);
   }
   nav.wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
@@ -302,6 +302,38 @@
   </div>
 </section>
 
+<!-- ===================== FAQ (compact) ===================== -->
+<section class="band-alt" id="faq" style="padding:48px 0;">
+  <div class="wrap" style="max-width:720px;">
+    <div class="section-head" style="margin-bottom:24px;">
+      <span class="eyebrow" style="margin-bottom:8px;">Common questions</span>
+      <h2 style="font-size:22px;">Before you ask, the short version</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" style="padding:14px 18px;">
+        <summary style="font-size:14.5px;">What if you don't close any deals?</summary>
+        <p style="font-size:13.5px;">Then you don't pay. We work on commission, so there's no retainer, no setup fee, and no cost to try HOP.</p>
+      </details>
+      <details class="faq-item" style="padding:14px 18px;">
+        <summary style="font-size:14.5px;">What's the commission?</summary>
+        <p style="font-size:13.5px;">It depends on your product, price point, and market. We agree on the structure together on the intro call.</p>
+      </details>
+      <details class="faq-item" style="padding:14px 18px;">
+        <summary style="font-size:14.5px;">Which markets or countries do you cover?</summary>
+        <p style="font-size:13.5px;">We work with companies anywhere, and focus outreach on whichever market you're trying to enter.</p>
+      </details>
+      <details class="faq-item" style="padding:14px 18px;">
+        <summary style="font-size:14.5px;">Will you sign an NDA?</summary>
+        <p style="font-size:13.5px;">Yes, happy to, especially before we get hands-on with your product or pricing details.</p>
+      </details>
+      <details class="faq-item" style="padding:14px 18px;">
+        <summary style="font-size:14.5px;">What do you need from us to get started?</summary>
+        <p style="font-size:13.5px;">Access to your product, your ideal customer, and a short call to align on market and commission.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== HOW IT WORKS ===================== -->
 <section class="band-alt" id="how">
   <div class="wrap">
@@ -349,44 +381,13 @@
           <li><span class="check">&#10003;</span> You'd rather pay for results than for headcount.</li>
           <li><span class="check">&#10003;</span> You're a founder or small team who is technical first, sales second.</li>
         </ul>
+        <p style="color:var(--muted);font-size:14.5px;margin:20px 0 0;">Not AI or SaaS? That's fine too. HOP works with any product or service that needs a sales push into a new market, this is just the space we know best.</p>
       </div>
       <div class="quote-panel">
         <span class="eyebrow">Why commission-based</span>
         <h3>Our incentive is your revenue.</h3>
         <p>We don't get paid for effort, meetings, or reports. We get paid when a customer signs and pays. That keeps us focused on the only metric that matters to you, and means starting a partnership with HOP carries no financial risk.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== FAQ ===================== -->
-<section class="band-alt" id="faq">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Common questions</span>
-      <h2>Before you ask, here's the short version</h2>
-    </div>
-    <div class="faq-list">
-      <details class="faq-item" open>
-        <summary>What if you don't close any deals?</summary>
-        <p>Then you don't pay. We work on commission, so there's no retainer, no setup fee, and no cost to try HOP.</p>
-      </details>
-      <details class="faq-item">
-        <summary>What's the commission?</summary>
-        <p>It depends on your product, price point, and market. We agree on the structure together on the intro call, options range from a one-time percentage per deal to a smaller ongoing percentage for as long as the customer stays.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Which markets or countries do you cover?</summary>
-        <p>We work with companies anywhere, and focus outreach on whichever market you're trying to enter. Tell us the target market on the call.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Will you sign an NDA?</summary>
-        <p>Yes, happy to, especially before we get hands-on with your product or pricing details.</p>
-      </details>
-      <details class="faq-item">
-        <summary>What do you need from us to get started?</summary>
-        <p>Access to your product, a clear picture of your ideal customer, and a short call to align on target market and commission structure. That's it.</p>
-      </details>
     </div>
   </div>
 </section>
@@ -432,6 +433,14 @@
           <input id="email" name="email" type="email" required>
         </div>
         <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required>
+        </div>
+        <div class="field">
+          <label for="website">Website (optional)</label>
+          <input id="website" name="website" type="url" placeholder="https://">
+        </div>
+        <div class="field">
           <label for="message">Tell us about your product and target market</label>
           <textarea id="message" name="message" required></textarea>
         </div>
@@ -460,6 +469,7 @@
         <a href="#who">Who it's for</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/company/house-of-partnerships/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="footer-bottom">&copy; <span id="year"></span> House of Partnerships. All rights reserved.</div>
