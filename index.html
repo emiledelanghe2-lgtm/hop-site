@@ -164,6 +164,20 @@
   .card h3{font-size:18px;margin:0 0 10px;font-weight:700;}
   .card p{margin:0;color:var(--muted);font-size:15px;}
 
+  .faq-list{max-width:720px;margin:0 auto;}
+  .faq-item{
+    background:#fff;border:1px solid var(--border);border-radius:12px;
+    padding:18px 22px;margin-bottom:12px;
+  }
+  .faq-item summary{
+    font-weight:700;font-size:15.5px;cursor:pointer;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+";color:var(--orange);font-size:20px;font-weight:800;margin-left:12px;}
+  .faq-item[open] summary::after{content:"\2212";}
+  .faq-item p{margin:12px 0 0;color:var(--muted);font-size:14.5px;}
+
   .band{background:var(--white);}
   .band-alt{background:var(--bg);}
 
@@ -234,7 +248,7 @@
     <div class="nav-links" id="navLinks">
       <a href="#how">How it works</a>
       <a href="#who">Who it's for</a>
-      <a href="#why">Why HOP</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </div>
     <div class="nav-cta">
@@ -254,15 +268,8 @@
       <a href="#contact" class="btn btn-primary">Book a free intro call</a>
       <a href="#how" class="btn btn-outline">See how it works</a>
     </div>
-  </div>
-</section>
-
-<!-- ===================== WHY THE NAME "HOP" ===================== -->
-<section class="band-alt" style="padding:40px 0;">
-  <div class="wrap" style="max-width:760px;text-align:center;">
-    <p style="color:var(--muted);font-size:15px;margin:0;">
-      <strong style="color:var(--text);">Why "HOP"?</strong>
-      To hop is to leap somewhere new, quickly and without friction. That's the job: helping a company hop from one market into the next, without the months of hiring and setup a full sales team would take.
+    <p style="margin:36px auto 0;max-width:600px;font-size:13.5px;color:rgba(255,255,255,0.55);">
+      <strong style="color:rgba(255,255,255,0.8);">Why "HOP"?</strong> To hop is to leap somewhere new, quickly and without friction, exactly what we help you do between markets.
     </p>
   </div>
 </section>
@@ -352,6 +359,38 @@
   </div>
 </section>
 
+<!-- ===================== FAQ ===================== -->
+<section class="band-alt" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common questions</span>
+      <h2>Before you ask, here's the short version</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>What if you don't close any deals?</summary>
+        <p>Then you don't pay. We work on commission, so there's no retainer, no setup fee, and no cost to try HOP.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What's the commission?</summary>
+        <p>It depends on your product, price point, and market. We agree on the structure together on the intro call, options range from a one-time percentage per deal to a smaller ongoing percentage for as long as the customer stays.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which markets or countries do you cover?</summary>
+        <p>We work with companies anywhere, and focus outreach on whichever market you're trying to enter. Tell us the target market on the call.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Will you sign an NDA?</summary>
+        <p>Yes, happy to, especially before we get hands-on with your product or pricing details.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What do you need from us to get started?</summary>
+        <p>Access to your product, a clear picture of your ideal customer, and a short call to align on target market and commission structure. That's it.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== CTA ===================== -->
 <section id="why">
   <div class="wrap">
@@ -419,6 +458,7 @@
       <div class="footer-links">
         <a href="#how">How it works</a>
         <a href="#who">Who it's for</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
