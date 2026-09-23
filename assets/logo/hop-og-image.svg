@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <rect width="1200" height="1200" fill="#0B2E4F"/>
+  <g transform="translate(566,505)">
+    <rect x="0" y="0" width="30" height="95" rx="9" fill="#FFFFFF"/>
+    <rect x="62" y="0" width="30" height="95" rx="9" fill="#FFFFFF"/>
+    <path d="M30 47 L62 47 L46 29 M62 47 L46 65" stroke="#E8722C" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="600" y="680" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#FFFFFF">HOUSE OF PARTNERSHIPS</text>
+  <text x="600" y="735" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600" letter-spacing="1" fill="#E8722C">SALES-AS-A-SERVICE FOR AI &amp; SAAS COMPANIES</text>
+  <text x="600" y="785" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#C9D2DC">Enter new markets without building a local sales team</text>
+</svg>
