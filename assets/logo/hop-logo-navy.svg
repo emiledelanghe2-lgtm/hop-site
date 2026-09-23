@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 110" width="460" height="110">
+  <g>
+    <rect x="10" y="15" width="20" height="80" rx="6" fill="#0B2E4F"/>
+    <rect x="72" y="15" width="20" height="80" rx="6" fill="#0B2E4F"/>
+    <path d="M30 45 L72 45 L58 30 M72 45 L58 60" stroke="#E8722C" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="115" y="70" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#0B2E4F">HOP</text>
+  <text x="117" y="94" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#5B6472">HOUSE OF PARTNERSHIPS</text>
+</svg>
