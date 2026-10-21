@@ -140,6 +140,24 @@
   }
   .hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 
+  /* ---------- Brand strip ---------- */
+  .brands{background:var(--navy);border-top:1px solid rgba(255,255,255,0.08);padding:26px 0 30px;overflow:hidden;}
+  .brands-label{text-align:center;font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0 0 20px;padding:0 24px;}
+  .brands-viewport{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
+  .brands-track{display:flex;justify-content:center;width:100%;}
+  .brands-track.is-ready{justify-content:flex-start;width:max-content;animation:brands-scroll 60s linear infinite;}
+  .brands-viewport:hover .brands-track.is-ready{animation-play-state:paused;}
+  .brands-group{display:flex;align-items:center;flex-shrink:0;}
+  .brand{display:flex;align-items:center;gap:10px;padding:0 46px;opacity:.9;}
+  .brand img{width:auto;display:block;}
+  .brand span{color:#FFFEFB;font-weight:800;font-size:19px;letter-spacing:-.2px;white-space:nowrap;}
+  @keyframes brands-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  @media (prefers-reduced-motion:reduce){
+    .brands-track.is-ready{animation:none;width:100%;justify-content:center;}
+    .brands-track.is-ready .brands-group + .brands-group{display:none;}
+    .brands-track.is-ready .brand:nth-child(n+4){display:none;}
+  }
+
   /* ---------- Sections ---------- */
   section{padding:84px 0;}
   .section-head{text-align:center;max-width:640px;margin:0 auto 52px;}
@@ -267,6 +285,20 @@
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">Book a free intro call</a>
       <a href="#how" class="btn btn-outline">See how it works</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BRAND STRIP ===================== -->
+<section class="brands" aria-label="Other brands from the team behind HOP">
+  <p class="brands-label">Also from the team behind HOP</p>
+  <div class="brands-viewport">
+    <div class="brands-track" id="brandsTrack">
+      <div class="brands-group">
+        <div class="brand"><img src="assets/partners/novacharts.png" alt="NovaCharts" style="height:50px;"></div>
+        <div class="brand"><img src="assets/partners/middlepoint-icon.png" alt="" style="height:34px;"><span>Middlepoint</span></div>
+        <div class="brand"><img src="assets/partners/shine.png" alt="Shine Marketing" style="height:34px;"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -475,6 +507,16 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+  (function(){
+    var track = document.getElementById('brandsTrack');
+    if(!track) return;
+    var group = track.querySelector('.brands-group');
+    group.innerHTML = group.innerHTML.repeat(5);
+    var clone = group.cloneNode(true);
+    clone.setAttribute('aria-hidden','true');
+    track.appendChild(clone);
+    track.classList.add('is-ready');
+  })();
   document.getElementById('navToggle').addEventListener('click', function(){
     document.getElementById('navLinks').classList.toggle('open');
   });
