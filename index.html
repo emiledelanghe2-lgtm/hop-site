@@ -149,6 +149,8 @@
   .brands-viewport:hover .brands-track.is-ready{animation-play-state:paused;}
   .brands-group{display:flex;align-items:center;flex-shrink:0;}
   .brand{display:flex;align-items:center;gap:10px;padding:0 46px;opacity:.9;}
+  a.brand{text-decoration:none;color:inherit;transition:opacity .15s ease;}
+  a.brand:hover,a.brand:focus-visible{opacity:1;}
   .brand img{width:auto;display:block;}
   .brand span{color:#FFFEFB;font-weight:800;font-size:19px;letter-spacing:-.2px;white-space:nowrap;}
   @keyframes brands-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
@@ -291,12 +293,12 @@
 
 <!-- ===================== BRAND STRIP ===================== -->
 <section class="brands" aria-label="Other brands from the team behind HOP">
-  <p class="brands-label">Also from the team behind HOP</p>
+  <p class="brands-label">Brands we build and run</p>
   <div class="brands-viewport">
     <div class="brands-track" id="brandsTrack">
       <div class="brands-group">
-        <div class="brand"><img src="assets/partners/novacharts.png" alt="NovaCharts" style="height:50px;"></div>
-        <div class="brand"><img src="assets/partners/middlepoint-icon.png" alt="" style="height:34px;"><span>Middlepoint</span></div>
+        <a class="brand" href="https://novacharts.net" target="_blank" rel="noopener" aria-label="NovaCharts"><img src="assets/partners/novacharts.png" alt="NovaCharts" style="height:50px;"></a>
+        <a class="brand" href="https://middlepoint.net" target="_blank" rel="noopener" aria-label="Middlepoint"><img src="assets/partners/middlepoint-icon.png" alt="" style="height:34px;"><span>Middlepoint</span></a>
         <div class="brand"><img src="assets/partners/shine.png" alt="Shine Marketing" style="height:34px;"></div>
       </div>
     </div>
@@ -511,10 +513,13 @@
     var track = document.getElementById('brandsTrack');
     if(!track) return;
     var group = track.querySelector('.brands-group');
+    var realLinks = group.querySelectorAll('a').length;
     group.innerHTML = group.innerHTML.repeat(5);
     var clone = group.cloneNode(true);
     clone.setAttribute('aria-hidden','true');
     track.appendChild(clone);
+    var links = track.querySelectorAll('a');
+    for (var i = realLinks; i < links.length; i++) links[i].setAttribute('tabindex','-1');
     track.classList.add('is-ready');
   })();
   document.getElementById('navToggle').addEventListener('click', function(){
