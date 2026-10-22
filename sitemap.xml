@@ -2,7 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://houseofpartnerships.com/</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-22</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://houseofpartnerships.com/insights/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://houseofpartnerships.com/insights/what-is-sales-as-a-service/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://houseofpartnerships.com/insights/commission-only-sales-agency/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://houseofpartnerships.com/insights/enter-new-markets-without-a-local-sales-team/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://houseofpartnerships.com/insights/independent-sales-agent-vs-sales-hire/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://houseofpartnerships.com/insights/selling-ai-products-to-businesses/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
